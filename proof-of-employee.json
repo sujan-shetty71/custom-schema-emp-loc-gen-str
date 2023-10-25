@@ -3,8 +3,8 @@
   "type": "object",
   "$metadata": {
     "uris": {
-      "jsonLdContext": "https://raw.githubusercontent.com/sujan-shetty71/custom-schema-emp-loc-gen/main/proof-of-employee.jsonld",
-      "jsonSchema": "https://raw.githubusercontent.com/sujan-shetty71/custom-schema-emp-loc-gen/main/proof-of-employee.json"
+      "jsonLdContext": "https://raw.githubusercontent.com/sujan-shetty71/custom-schema-emp-loc-gen-str/main/proof-of-employee.jsonld",
+      "jsonSchema": "https://raw.githubusercontent.com/sujan-shetty71/custom-schema-emp-loc-gen-str/main/proof-of-employee.json"
     }
   },
   "required": [
@@ -105,7 +105,7 @@
     },
     "credentialSubject": {
       "type": "object",
-      "required": ["id", "isEmployee", "location"],
+      "required": ["id", "isEmployee"],
       "properties": {
         "id": {
           "title": "Credential Subject ID",
@@ -116,10 +116,10 @@
           "type": "integer"
         },
         "location": {
-          "type": "integer"
+          "type": "string"
         },
         "gender": {
-          "type": "integer"
+          "type": "string"
         }
       }
     }
