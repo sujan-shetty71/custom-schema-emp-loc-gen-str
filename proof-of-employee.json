@@ -108,7 +108,6 @@
       "required": ["id", "isEmployee"],
       "properties": {
         "id": {
-          "title": "Credential Subject ID",
           "type": "string",
           "format": "uri"
         },
